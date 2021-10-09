@@ -1,0 +1,226 @@
+.short-main {
+   height: 100vh!important;
+}
+.video-detail-container{
+   height: 100%;
+   display: flex;
+   position: relative;
+}
+.short-video-wrapper {
+   height: 100%;
+   position: relative;
+   flex: 1;
+   flex-shrink: 0;
+   background: rgba(17,17,17,.7);
+}
+.short-video-wrapper .back-warp {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.short-video-wrapper .backimg-do {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   -webkit-filter: blur(15px);
+   filter: blur(15px);
+   z-index: -1;
+   background-size: 100% auto;
+   transform: scale(1.1);
+}
+.short-video-wrapper .video-area{
+   min-width: 200px;
+   height: 100%;
+   margin: 0 auto;
+   position: relative;
+   max-width: 31.614583333333336vw;
+   overflow: inherit;
+}
+ 
+.short-video-wrapper .do-player{
+   position: relative;
+   overflow: hidden;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   width: 87%;
+}
+.video-switch {
+   height: 148px;
+   position: absolute;
+   bottom: 20px;
+   right: -14px;
+   z-index: 9999999;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+}
+
+.video-switch .switch-item{
+   width: 56px;
+   height: 56px;
+   border-radius: 100%;
+   cursor: pointer;
+   z-index: 999;
+   padding: 10px;
+   background-color: rgb(255 255 255 / 10%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   transform: rotate(268deg);
+   font-size: 10px;
+}
+
+
+.short-video-info {
+   position: relative;
+   background-color: #222;
+   box-sizing: border-box;
+   overflow: hidden;
+   flex-shrink: 0;
+   height: 100vh;
+   transition: transform 1s;
+   transition: opacity 3s;
+   transition: width 1s;
+}
+.short-video-info .vod-info::-webkit-scrollbar-thumb {
+   display: none;
+}
+.digg-bin{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.digg-bin .favs_ulog{
+   padding-top: 5px;
+}
+.video-btn .icon{
+    width: 1.5em;
+    height: 1.5em;
+}
+.toggle-info {
+   width: 24px;
+   height: 48px;
+   background-size: 100% auto;
+   position: absolute;
+   top: 50%;
+   right: -24px;
+   transform: translateY(-50%);
+   color: #999;
+   z-index: 999;
+   cursor: pointer;
+}
+
+.toggle-info-svg {
+   height: 100%;
+   width: 100%;
+   stroke: none;
+}
+.toggle-enter-active,.toggle-leave-active {
+   transition: transform 1s;
+   transition: opacity 3s
+}
+
+.toggle-info.hide-status {
+   right: 0;
+}
+.short-video-info.toggle-hide{
+   width: 0;
+}
+.toggle-info.hide-status .toggle-info-svg {
+   transform: rotate(180deg);
+}
+.close-page{
+   width: 56px;
+   height: 56px;
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   border-radius: 100%;
+   /* cursor: pointer; */
+   background: url(http://dy.112123.xyz/template/douyin/html/template/datll_tpl_m032/assets/img/close.svg) no-repeat 50%;
+}
+.close-page:hover {
+   background: url(http://dy.112123.xyz/template/douyin/html/template/datll_tpl_m032/assets/img/close-active.svg) no-repeat 50%;
+}
+
+@media screen and (min-width:1700px){
+   .short-video-wrapper .do-player{
+
+width: 90%;
+
+}
+}
+
+@media screen and (max-width: 1599px){
+   .short-video-info {
+      width: 500px;
+   }
+  
+}
+
+@media screen and (max-width: 1365px){
+   .short-video-wrapper  .video-area {
+      min-width: 360px;
+  }
+   .short-video-info {
+      width: 350px;
+  }
+}
+
+
+@media only screen and (max-width: 576px){
+   .video-detail-container{
+      flex-direction: column;
+   }
+   .short-video-wrapper .video-area{
+      width: 100%;
+      min-width: 100%;
+   }
+   .short-video-wrapper .do-player{
+      width: 100%;
+   }
+   .toggle-info{
+      display: none;
+   }
+   .video-switch{
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 80px;
+      padding: 0px 11px;
+   }
+   .video-switch .switch-item{
+      transform: rotate(180deg);
+   }
+   .short-video-info{
+      width: 100%;
+      height: auto;
+   }
+   .vod-info{
+      width: 100%;
+      overflow: visible;
+      padding: 1rem!important;
+      height: auto;
+   }
+   .vod-info .cmt-list.scroll{
+    height: auto;
+}
+   .vod-info .cmt-list .clist.comment_list{
+    height: auto;
+}
+}

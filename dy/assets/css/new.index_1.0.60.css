@@ -1,0 +1,225 @@
+.ellipsis-txt {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   font-size: 0.9rem;
+}
+
+.banner{
+   margin-bottom: 15px;
+}
+.do_banner {
+   /* height: 200px; */
+   /* min-height: 200px; */
+   min-width: 1186px;
+   position: relative;
+   padding-top: 96px;
+   /* background-color: #646464; */
+   /* background: url(../img/topBanner.jpg) no-repeat; */
+}
+.content-more a{
+    color: #9e9e9e;
+}
+.content-more a:hover{
+   color: #e91e63;
+}
+.title{}
+.title h1{
+    color: #e91e63;
+}
+.title h2{
+    font-size: 20px;
+    color: #607d8b;
+}
+.do_banner .banner-img {
+   height: 100%;
+   width: 100%;
+   -o-object-fit: cover;
+   object-fit: cover;
+}
+
+.title-text{
+    margin-right: 25px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #fff;
+    /* cursor: default; */
+    cursor: pointer;
+}
+ 
+
+
+.do_list .single-portfolio{margin-bottom: 20px;}
+.do_list .single-portfolio-img{
+    height: 258px;
+    background-color: #232634;
+    border-radius: 8px;
+}
+
+.blog-sidebar{
+    display: flex;
+    align-items: center;
+}
+.blog-sidebar .icon{
+    margin-right: 7px;
+    width: 2em;
+    height: 2em;
+}
+.area-tab-container{
+    display: flex;
+    align-items: center;
+} 
+.area-tab-container .nav-link{
+    padding: 6px 11px;
+    box-sizing: border-box;
+    background: #232634;
+    border-radius: 30px;
+    color: #c0c0c0;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 13px;
+    cursor: pointer;
+} 
+
+.area-tab-container.nav-pills .nav-link.active, .area-tab-container.nav-pills .show>.nav-link{background-color: #e91e63;}
+
+.area-tab-container .tab-item:hover{
+   background: #fe3666;
+   color: #fff;
+}
+.do_list .do_content{
+    margin-top: 15px;
+}
+
+.do_list .review h6{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.do_aside{
+   background-color: #232634;
+   border-radius: 4px;
+   width: 100%;
+   padding: 0 20px;
+   box-sizing: border-box;
+   margin-top: 20px;
+}
+
+.do_aside .rank-item{
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid #434343;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.do_aside .rank-num{
+    width: 35px;
+    font-family: Impact;
+    font-size: 30.6px;
+    color: #c6c6c6;
+    position: relative;
+    text-align: center;
+    margin-right: 8px;
+    z-index: 1;
+    cursor: pointer;
+}
+.do_aside .rank-num.rank-top-1{
+    color: #fe3666;
+}
+.do_aside .rank-num.rank-top-2{
+    color: #ff6f00;
+}
+.do_aside .rank-num.rank-top-3{
+    color: #ffa600;
+}
+.do_aside .rank-info{
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    width: 80%;
+}
+.do_aside .rank-info .rank-name{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 240px;
+    line-height: 15.6px;
+}
+.do_aside .rank-info .rank-detail{
+    margin-top: 4px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+.do_aside .rank-info .detail-icon{
+    width: 12px;
+    height: 15px;
+    display: inline-block;
+    background-size: 100% auto;
+    margin-right: 6px;
+    background: url(../img/hot_pr.svg) no-repeat 50%;
+}
+.do_aside .rank-info .hot-value{
+    color: #999;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 576px){
+   .title-text{
+      margin-right: 9px;
+      font-size: 1.1rem;
+      font-weight: 600;
+   }
+      .blog-sidebar{
+      margin-left: -10px;
+      margin-right: -15px;
+      flex-wrap: wrap;
+      justify-content: end; /* 水平居中 */
+      align-items: center;
+      margin-bottom: 15px;
+   }
+   .do_content h5{
+      font-size: 0.8rem;
+   }
+   .area-tab-container{
+      margin-bottom: 0!important;
+   }
+   .blog-sidebar .icon{
+      margin-right: 0;
+   }
+   .blog-sidebar ul li{
+      padding-bottom: inherit;
+      margin-top: inherit;
+   }
+   .area-tab-container .nav-link{margin-right: 4px;padding: 3px 8px;}
+   .portfolio-content h5{
+        font-size: 10px;
+    }
+    .do_banner{
+          margin-top: 0;
+        min-width: 100%;
+        padding-top: 60px;
+    }
+    .do_aside{
+        margin-left: -8px;
+        margin-right: -8px;
+        width: auto;
+    }
+    .tags{
+        margin-left: 6px;
+        margin-top: -6px;
+    }
+    .tags a{
+        margin: 3px 2px;
+        font-size: 0.2rem;
+    }
+    
+    .title-tag{
+            margin-left: 8px;
+    }
+}
